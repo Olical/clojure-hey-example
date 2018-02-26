@@ -8,11 +8,11 @@
   {:extra-paths ["test"]
    :extra-deps
    {com.cognitect/test-runner {:git/url "git@github.com:cognitect-labs/test-runner"
-                               :sha "5fb4fc46ad0bf2e0ce45eba5b9117a2e89166479"}}
+                               :sha "5f2b5c2efb444df76fb5252102b33f542ebf7f58"}}
    :main-opts ["-m" "cognitect.test-runner"]}
-  :uberjar
+  :pack
   {:extra-deps
    {pack/pack.alpha
     {:git/url "git@github.com:juxt/pack.alpha.git"
-     :sha     "eed89476315661e2389d5d078ec17375bec3efa5"}}
-   :main-opts ["-m" "mach.pack.alpha.jcl" "deps.edn" "hey.jar"]}}}
+     :sha     "e6d0691c5f58135e1ef6fb1c9dda563611d36205"}}
+   :main-opts ["-m" "mach.pack.alpha.capsule" "deps.edn" "hey.jar"]}}}
