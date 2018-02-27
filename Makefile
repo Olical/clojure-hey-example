@@ -7,7 +7,6 @@ test:
 	clj -Atest
 
 uberjar:
-	clj -Acompile
 	clj -Auberjar
 
 deploy: test

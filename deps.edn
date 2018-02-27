@@ -15,7 +15,4 @@
    {pack/pack.alpha
     {:git/url "git@github.com:juxt/pack.alpha.git"
      :sha     "e6d0691c5f58135e1ef6fb1c9dda563611d36205"}}
-   :main-opts ["-m" "mach.pack.alpha.capsule" "deps.edn" "dist/hey.jar"]}
-  :compile
-  {:extra-paths ["dist/classes"]
-   :main-opts ["-e" "(do (set! *compile-path* \"dist/classes\") (compile (symbol \"hey.core\")))"]}}}
+   :main-opts ["-m" "mach.pack.alpha.capsule" "deps.edn" "dist/hey.jar"]}}}
