@@ -12,5 +12,4 @@ uberjar:
 
 deploy: test
 	clj -Spom
-	mvn package
 	mvn deploy
