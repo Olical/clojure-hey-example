@@ -1,4 +1,4 @@
-.PHONY: run test pack deploy
+.PHONY: run test uberjar deploy
 
 run:
 	clj -m hey.core
@@ -6,13 +6,11 @@ run:
 test:
 	clj -Atest
 
-pack:
-	clj -Apack
+uberjar:
+	clj -Acompile
+	clj -Auberjar
 
-deploy: test pack
+deploy:
 	clj -Spom
-	mvn deploy:deploy-file \
-		-DpomFile=pom.xml \
-		-Dfile=dist/hey.jar \
-		-DrepositoryId=clojars \
-		-Durl=https://clojars.org/repo
+	mvn package
+	mvn deploy
