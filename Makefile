@@ -10,7 +10,7 @@ uberjar:
 	clj -Acompile
 	clj -Auberjar
 
-deploy:
+deploy: test
 	clj -Spom
 	mvn package
 	mvn deploy
