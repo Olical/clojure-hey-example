@@ -25,6 +25,7 @@
         <directory>src</directory>
       </resource>
     </resources>
+  </build>
   <repositories>
     <repository>
       <id>clojars</id>
